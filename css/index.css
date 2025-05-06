@@ -101,7 +101,6 @@ footer {
 /* עיצוב אזור התפריטים */
 .menu-section {
     padding: 6rem 2rem;
-    background-color: var(--white);
     text-align: center;
 }
 
@@ -111,17 +110,7 @@ footer {
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
-}
-
-.menu-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: var(--gold);
+    border-bottom: 3px solid var(--gold);
 }
 
 .main-buttons {

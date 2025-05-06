@@ -2,9 +2,76 @@ if (location.hostname === 'shmuel-shif.github.io') {
     const base = document.createElement('base')
     base.href = '/roter/'
     document.head.appendChild(base)
-  }
+}
 
-document.addEventListener('DOMContentLoaded', function() {
+// קוד לטיפול במודל בדף הראשי
+function initializeModal() {
+    const modalHTML = `
+        <div class="modal-overlay"></div>
+        <div class="modal">
+            <button class="close-modal">×</button>
+            <div class="modal-content">
+                <img src="" alt="" class="modal-image">
+                <div class="modal-details">
+                    <h3 class="modal-title"></h3>
+                    <p class="modal-description"></p>
+                    <span class="modal-price"></span>
+                </div>
+            </div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    const modal = document.querySelector('.modal');
+    const modalOverlay = document.querySelector('.modal-overlay');
+    const closeModal = document.querySelector('.close-modal');
+
+    // סגירת המודל
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+    });
+
+    modalOverlay.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+    });
+
+    // מאזין להודעות מה-iframes
+    window.addEventListener('message', function(event) {
+        if (event.data.type === 'openModal') {
+            modal.querySelector('.modal-image').src = event.data.data.image;
+            modal.querySelector('.modal-image').alt = event.data.data.title;
+            modal.querySelector('.modal-title').textContent = event.data.data.title;
+            modal.querySelector('.modal-description').textContent = event.data.data.description;
+            modal.querySelector('.modal-price').textContent = event.data.data.price;
+
+            modal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+        }
+    });
+}
+
+// קוד לטיפול בפריטים בתוך ה-iframe
+function initializeMenuItems() {
+    document.querySelectorAll('.menu-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const itemData = {
+                image: item.querySelector('.item-image').src,
+                title: item.querySelector('.item-title').textContent,
+                description: item.querySelector('.item-description').textContent,
+                price: item.querySelector('.item-price').textContent
+            };
+            window.parent.postMessage({
+                type: 'openModal',
+                data: itemData
+            }, '*');
+        });
+    });
+}
+
+// קוד לניווט
+function initializeNavigation() {
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.menu-nav-item');
     
@@ -62,6 +129,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // מפעיל בטעינת הדף
     setActiveCategory();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // בדף הראשי
+    if (window.location.pathname.includes('shabbat-menu.html')) {
+        initializeModal();
+        initializeNavigation();
+    }
+    // בדפי ה-iframe
+    else {
+        initializeMenuItems();
+    }
+    
+    // התאמת גובה ה-iframes
+    adjustIframeHeight();
 });
 
 // התאמת גובה אוטומטית ל-iframes
@@ -74,8 +156,6 @@ function adjustIframeHeight() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', adjustIframeHeight);
-
 // בדף הראשי - מוסיפים את זה לקובץ הקיים
 window.addEventListener('message', function(event) {
     if (event.data.type === 'scrollTo') {
@@ -85,3 +165,9 @@ window.addEventListener('message', function(event) {
         }
     }
 });
+
+// בסוף הקובץ
+function scrollToFooter(e) {
+    e.preventDefault();
+    document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+}
