@@ -166,7 +166,6 @@ window.addEventListener('message', function(event) {
     }
 });
 
-// בסוף הקובץ
 function scrollToFooter(e) {
     e.preventDefault();
     document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });

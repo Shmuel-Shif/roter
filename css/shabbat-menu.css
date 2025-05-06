@@ -28,7 +28,7 @@ html {
 /* ניווט קטגוריות */
 .menu-navigation {
     position: sticky;
-    top: 80px;
+    top: 73px;
     background-color: white;
     padding: 1rem;
     display: flex;
@@ -241,7 +241,6 @@ html {
 }
 
 .close-modal:hover {
-    background-color: var(--cream);
     color: var(--primary-brown);
 }
 
