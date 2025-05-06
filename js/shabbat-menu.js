@@ -1,4 +1,3 @@
-
 function initializeModal() {
     const modalHTML = `
         <div class="modal-overlay"></div>
@@ -34,17 +33,9 @@ function initializeModal() {
     // מאזין להודעות מה-iframes
     window.addEventListener('message', function(event) {
         if (event.data.type === 'openModal') {
+            let imgSrc = event.data.data.image;
             
-            let imgSrc = event.data.data.image
-
-            if (location.hostname === 'shmuel-shif.github.io') {
-                imgSrc = '/roter/' + imgSrc
-            } else {
-                // אם עובדים בלוקאל – נתיב רגיל
-                imgSrc = '/' + imgSrc
-            }
-
-            modal.querySelector('.modal-image').src = imgSrc
+            modal.querySelector('.modal-image').src = imgSrc;
             modal.querySelector('.modal-image').alt = event.data.data.title;
             modal.querySelector('.modal-title').textContent = event.data.data.title;
             modal.querySelector('.modal-description').textContent = event.data.data.description;
@@ -60,17 +51,31 @@ function initializeModal() {
 function initializeMenuItems() {
     document.querySelectorAll('.menu-item').forEach(item => {
         item.addEventListener('click', () => {
-            let relativeSrc = item.querySelector('.item-image').getAttribute('src')
-
-            if (relativeSrc.startsWith('/roter/')) {
-                relativeSrc = relativeSrc.slice('/roter/'.length)
+            let imageSrc = item.querySelector('.item-image').getAttribute('src');
+            
+            // מתקן את הנתיב היחסי של התמונה
+            if (imageSrc.startsWith('../')) {
+                // אם אנחנו בתת-תיקייה, נשאיר את הנתיב כמו שהוא
+                imageSrc = imageSrc;
+            } else {
+                // אם הנתיב לא מתחיל ב-../, נוסיף אותו
+                imageSrc = '../' + imageSrc;
             }
+            
+            // מוסיף את ה-roter לנתיב אם נדרש
+            if (location.hostname === 'shmuel-shif.github.io') {
+                // מסיר את ../ לפני שמוסיף את /roter/
+                imageSrc = imageSrc.replace('../', '');
+                imageSrc = '/roter/' + imageSrc;
+            }
+
             const itemData = {
-                image: relativeSrc,
+                image: imageSrc,
                 title: item.querySelector('.item-title').textContent,
                 description: item.querySelector('.item-description').textContent,
                 price: item.querySelector('.item-price').textContent
             };
+
             window.parent.postMessage({
                 type: 'openModal',
                 data: itemData
