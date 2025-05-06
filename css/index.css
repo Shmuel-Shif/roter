@@ -41,8 +41,10 @@ h1 {
 .main-buttons {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin: 3rem 0;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .menu-button {
@@ -119,7 +121,7 @@ footer {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
+    width: 150px;
     height: 3px;
     background: linear-gradient(to right, var(--gold), var(--primary-brown));
 }
@@ -143,23 +145,23 @@ footer {
 }
 
 .menu-card {
+    flex: 0 1 280px;
     background: var(--white);
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(139, 69, 19, 0.1);
-    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     position: relative;
-    display: block;
 }
 
 .menu-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(139, 69, 19, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.2);
 }
 
 .menu-image {
-    height: 400px;
+    height: 200px;
     position: relative;
     overflow: hidden;
 }
@@ -195,36 +197,35 @@ footer {
 }
 
 .menu-info {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
-    background: linear-gradient(to bottom, 
-        var(--white) 0%,
-        rgba(222, 184, 135, 0.1) 100%);
-    position: relative;
+    background: var(--white);
 }
 
 .menu-info h3 {
     color: var(--dark-brown);
-    font-size: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     position: relative;
     display: inline-block;
+    padding-bottom: 0.5rem;
 }
 
 .menu-info h3::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, 
-        var(--gold),
         var(--primary-brown),
-        var(--gold));
+        var(--gold),
+        var(--primary-brown));
     transform: scaleX(0);
     transition: transform 0.3s ease;
+    transform-origin: center;
 }
 
 .menu-card:hover .menu-info h3::after {
@@ -272,6 +273,10 @@ footer {
 
 .menu-card:hover .menu-link::before {
     transform: translateX(0);
+}
+
+.menu-arrow {
+    display: none;
 }
 
 /* עיצוב באנר ראשי */

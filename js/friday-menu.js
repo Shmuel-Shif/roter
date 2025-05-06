@@ -1,10 +1,3 @@
-if (location.hostname === 'shmuel-shif.github.io') {
-    const base = document.createElement('base')
-    base.href = '/roter/'
-    document.head.appendChild(base)
-}
-
-// קוד לטיפול במודל בדף הראשי
 function initializeModal() {
     const modalHTML = `
         <div class="modal-overlay"></div>
@@ -40,7 +33,17 @@ function initializeModal() {
     // מאזין להודעות מה-iframes
     window.addEventListener('message', function(event) {
         if (event.data.type === 'openModal') {
-            modal.querySelector('.modal-image').src = event.data.data.image;
+            
+            let imgSrc = event.data.data.image
+
+            if (location.hostname === 'shmuel-shif.github.io') {
+                imgSrc = '/roter/' + imgSrc
+            } else {
+                // אם עובדים בלוקאל – נתיב רגיל
+                imgSrc = '/' + imgSrc
+            }
+
+            modal.querySelector('.modal-image').src = imgSrc
             modal.querySelector('.modal-image').alt = event.data.data.title;
             modal.querySelector('.modal-title').textContent = event.data.data.title;
             modal.querySelector('.modal-description').textContent = event.data.data.description;
@@ -56,8 +59,13 @@ function initializeModal() {
 function initializeMenuItems() {
     document.querySelectorAll('.menu-item').forEach(item => {
         item.addEventListener('click', () => {
+            let relativeSrc = item.querySelector('.item-image').getAttribute('src')
+
+            if (relativeSrc.startsWith('/roter/')) {
+                relativeSrc = relativeSrc.slice('/roter/'.length)
+            }
             const itemData = {
-                image: item.querySelector('.item-image').src,
+                image: relativeSrc,
                 title: item.querySelector('.item-title').textContent,
                 description: item.querySelector('.item-description').textContent,
                 price: item.querySelector('.item-price').textContent
@@ -166,6 +174,7 @@ window.addEventListener('message', function(event) {
     }
 });
 
+// בסוף הקובץ
 function scrollToFooter(e) {
     e.preventDefault();
     document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
