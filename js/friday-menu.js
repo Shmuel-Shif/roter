@@ -1,3 +1,9 @@
+if (location.hostname === 'shmuel-shif.github.io') {
+    const base = document.createElement('base')
+    base.href = '/roter/'
+    document.head.appendChild(base)
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const navItems = document.querySelectorAll('.menu-nav-item');
