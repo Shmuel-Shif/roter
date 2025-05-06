@@ -21,7 +21,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     max-width: 1298px;
     margin: 0 auto;
 }

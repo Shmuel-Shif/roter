@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>רוטר - אוכל מוכן לשבת</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>תפריט קידושים - רוטר</title>
+    <link rel="stylesheet" href="css/kiddush-menu.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,58 +31,44 @@
     </header>
 
     <main>
-        <section class="hero-banner" role="banner">
-            <div class="banner-content">
-                <h1>טעמים שנשארים שבועות</h1>
-                <p>פרחים, ספיישלים, קינוחים, מארזים, ועוד...</p>
-                <a href="#order" class="order-button" role="button" aria-label="הזמינו עכשיו">הזמינו עכשיו >></a>
-            </div>
+        <div class="menu-navigation">
+            <a href="#stews" class="menu-nav-item">תבשילים</a>
+            <a href="#sandwiches" class="menu-nav-item">כריכים</a>
+            <a href="#fried" class="menu-nav-item">מטוגנים</a>
+            <a href="#specials" class="menu-nav-item">ספיישלים</a>
+            <a href="#cholant" class="menu-nav-item">צ׳ולנט</a>
+            <a href="#kogels" class="menu-nav-item">קוגלים</a>
+            <a href="#drinks" class="menu-nav-item">שתיה</a>
+        </div>
+        
+        <section id="stews">
+            <iframe src="sections-friday-menu/stews-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="sandwiches">
+            <iframe src="sections-friday-menu/sandwiches-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="fried">
+            <iframe src="sections-friday-menu/fried-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="specials">
+            <iframe src="sections-friday-menu/specials-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="cholant">
+            <iframe src="sections-friday-menu/cholant-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="kogels">
+            <iframe src="sections-friday-menu/kogels-section.html" width="100%" height="800" frameborder="0"></iframe>
+        </section>
+        
+        <section id="drinks">
+            <iframe src="sections-friday-menu/drinks-section.html" width="100%" height="800" frameborder="0"></iframe>
         </section>
 
-        <section class="menu-section" id="order">
-            <h2>התפריט שלנו</h2>
-            <div class="main-buttons">
-                <a href="friday-menu.html" class="menu-card">
-                    <div class="menu-image friday-menu">
-                        <img src="images/home/friday-menu.jpg" alt="תפריט ליל שישי">
-                    </div>
-                    <div class="menu-info">
-                        <h3>ליל שישי ברוטר </h3>
-                        <span class="menu-arrow">›</span>
-                    </div>
-                </a>
-
-                <a href="shabbat-menu.html" class="menu-card">
-                    <div class="menu-image shabbat-menu">
-                        <img src="images/home/shabbat-menu.jpg" alt="תפריט שבת">
-                    </div>
-                    <div class="menu-info">
-                        <h3>שישי שבת ברוטר</h3>
-                        <span class="menu-arrow">›</span>
-                    </div>
-                </a>
-
-                <a href="events-menu.html" class="menu-card">
-                    <div class="menu-image events-menu">
-                        <img src="images/home/events-menu.jpg" alt="אירועים">
-                    </div>
-                    <div class="menu-info">
-                        <h3>אירועים ברוטר</h3>
-                        <span class="menu-arrow">›</span>
-                    </div>
-                </a>
-
-                <a href="kiddush-menu.html" class="menu-card">
-                    <div class="menu-image kiddush-menu">
-                        <img src="images/home/kiddush-menu.jpg" alt="קידושים">
-                    </div>
-                    <div class="menu-info">
-                        <h3>קידושים ברוטר</h3>
-                        <span class="menu-arrow">›</span>
-                    </div>
-                </a>
-            </div>
-        </section>
     </main>
 
     <footer class="site-footer" id="footer">
@@ -124,7 +110,6 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/your-code.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/kiddush-menu.js"></script>
 </body>
-</html>
+</html> 
