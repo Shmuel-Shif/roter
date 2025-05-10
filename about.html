@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות - רוטר</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/css-responsive/about-responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/css-responsive/footer-header-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" aria-label="דף הבית">
+                    <img src="images/home/logo.png" alt="לוגו רוטר" class="logo">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="תפריט">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" role="navigation">
+                <a href="index.html" class="active" aria-current="page">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="#footer" onclick="scrollToFooter(event)">צור קשר</a>
+                <a href="tel:+972505740348" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>050-574-0348</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="סגור תפריט">×</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="#footer">צור קשר</a>
+            <a href="tel:+972505740348" class="phone-link">
+                <i class="fas fa-phone"></i>
+                <span>050-574-0348</span>
+            </a>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>הסיפור שלנו</h1>
+                <p class="subtitle">טעם של בית, איכות ללא פשרות</p>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <h2>איך הכל התחיל</h2>
+                    <p>הסיפור של רוטר התחיל לפני למעלה מעשור, כאשר המשפחה שלנו החליטה להביא את הטעמים האותנטיים והמסורתיים לשולחן השבת של משפחות בית שמש. מה שהתחיל כמטבח קטן בבית, הפך במהרה למפעל של טעמים, ריחות וזכרונות.</p>
+                </div>
+                <div class="story-image">
+                    <img src="images/about/story.png" alt="המטבח שלנו">
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section">
+            <div class="container">
+                <h2>הערכים שלנו</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>אהבה למקצוע</h3>
+                        <p>כל מנה מוכנה באהבה ובתשומת לב לפרטים הקטנים</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-star"></i>
+                        <h3>איכות מעולה</h3>
+                        <p>שימוש בחומרי הגלם הטובים ביותר ללא פשרות</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-users"></i>
+                        <h3>שירות אישי</h3>
+                        <p>יחס אישי וחם לכל לקוח ולקוח</p>
+                    </div>
+                    <div class="value-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>טריות</h3>
+                        <p>כל המנות מוכנות טריות מדי יום</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <div class="container">
+                <h2>התהליך שלנו</h2>
+                <div class="process-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">1</div>
+                        <h3>בחירת חומרי גלם</h3>
+                        <p>אנחנו בוחרים את חומרי הגלם הטריים והאיכותיים ביותר</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">2</div>
+                        <h3>הכנה מסורתית</h3>
+                        <p>כל מנה מוכנה לפי מתכונים מסורתיים בשילוב טכניקות מודרניות</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">3</div>
+                        <h3>בקרת איכות</h3>
+                        <p>כל מנה עוברת בקרת איכות קפדנית</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">4</div>
+                        <h3>אריזה והפצה</h3>
+                        <p>אריזה בכלים איכותיים ומשלוח עד הבית</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <div class="container">
+                <h2>הצוות שלנו</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/about/chef2.png" alt="שף קונדיטוריה">
+                        </div>
+                        <h3>יוסף כהן</h3>
+                        <p>שף קונדיטוריה</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/about/chef1.png" alt="השף הראשי">
+                        </div>
+                        <h3>שמעון רוטר</h3>
+                        <p>השף הראשי</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="images/about/chef3.png" alt="שף בשרים">
+                        </div>
+                        <h3>דוד לוי</h3>
+                        <p>שף בשרים</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>שעות פתיחה</h3>
+                <p>ראשון - חמישי: 10:00 - 22:00</p>
+                <p>שישי: 09:00 - 14:00</p>
+                <p>שבת: סגור</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 050-574-0348</p>
+                <p>כתובת: שדרות האמוראים 34, בית שמש</p>
+                <p>דוא"ל: Rotterdeli@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roter" target="_blank" aria-label="עקבו אחרינו בפייסבוק">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/roter" target="_blank" aria-label="עקבו אחרינו באינסטגרם">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/972721234567" target="_blank" aria-label="צרו איתנו קשר בווצאפ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>הזמנות מיוחדות</h3>
+                <p>ניתן להזמין אוכל לשבת עד יום חמישי בשעה 20:00</p>
+                <p>משלוחים חינם בהזמנה מעל ₪350</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 רוטר - כל הזכויות שמורות</p>
+                <a href="accessibility.html" class="accessibility-button" aria-label="מידע על נגישות האתר">
+                    <i class="fas fa-universal-access"></i>
+                    <span>הצהרת נגישות</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

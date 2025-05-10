@@ -1,0 +1,123 @@
+:root {
+    --primary-brown: #8B4513;
+    --light-brown: #DEB887;
+    --cream: #FAEBD7;
+    --dark-brown: #3E2723;
+    --white: #FFFFFF;
+    --gold: #D4AF37;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.75rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 920;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1178px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--dark-brown);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-brown);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 70%;
+}
+
+.nav-links a:hover {
+    color: var(--primary-brown);
+    background-color: rgba(139, 69, 19, 0.1);
+}
+
+.nav-links a.active {
+    color: var(--primary-brown);
+    font-weight: 700;
+}
+
+.phone-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-brown);
+    color: var(--white) !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: 50px !important;
+}
+
+.phone-link:hover {
+    background-color: var(--dark-brown) !important;
+    transform: translateY(-2px);
+}
+
+.phone-link i {
+    font-size: 1rem;
+}
+
+/* סטיילינג לטקסט ההשגחה */
+.kosher-text {
+    color: var(--primary-brown);
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.kosher-img {
+    width: 56px;
+    height: 24px;
+    object-fit: contain;
+}

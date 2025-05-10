@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רוטר - אוכל מוכן לשבת</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/css-responsive/index-responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/css-responsive/footer-header-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" aria-label="דף הבית">
+                    <img src="images/home/logo.png" alt="לוגו רוטר" class="logo">
+                </a>
+                <span class="kosher-text">
+                    <img src="images/home/kosher.jpg" alt="סמל כשרות" class="kosher-img">
+                    בהשגחת בד"ץ העדה החרדית
+                </span>
+            </div>
+            <button class="hamburger-menu" aria-label="תפריט">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" role="navigation">
+                <a href="index.html" class="active" aria-current="page">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="#footer" onclick="scrollToFooter(event)">צור קשר</a>
+                <a href="tel:+972505740348" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>050-574-0348</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="סגור תפריט">×</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="#footer">צור קשר</a>
+            <a href="tel:+972505740348" class="phone-link">
+                <i class="fas fa-phone"></i>
+                <span>050-574-0348</span>
+            </a>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <section class="hero-banner" role="banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-content">
+                <h1 class="fade-in">טעמים שנשארים שבועות</h1>
+                <p class="slide-up">פרחים, ספיישלים, קינוחים, מארזים, ועוד...</p>
+                <div class="cta-buttons">
+                    <a href="#order" class="order-button primary-btn" role="button">הזמינו עכשיו</a>
+                    <a href="about.html" class="secondary-btn">קצת עלינו</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="order">
+            <div class="section-header">
+                <h2>התפריט שלנו</h2>
+            </div>
+            <div class="main-buttons">
+                <a href="friday-menu.html" class="menu-card">
+                    <div class="menu-image friday-menu">
+                        <img src="images/home/friday-menu.jpg" alt="תפריט ליל שישי">
+                    </div>
+                    <div class="menu-info">
+                        <h3>רוטר נייט</h3>
+                        <span class="menu-arrow">›</span>
+                    </div>
+                </a>
+
+                <a href="shabbat-menu.html" class="menu-card">
+                    <div class="menu-image shabbat-menu">
+                        <img src="images/home/shabbat-menu.jpg" alt="תפריט שבת">
+                    </div>
+                    <div class="menu-info">
+                        <h3>שישי שבת ברוטר</h3>
+                        <span class="menu-arrow">›</span>
+                    </div>
+                </a>
+
+                <a href="events-menu.html" class="menu-card">
+                    <div class="menu-image events-menu">
+                        <img src="images/home/events-menu.jpg" alt="אירועים">
+                    </div>
+                    <div class="menu-info">
+                        <h3>אירועים ברוטר</h3>
+                        <span class="menu-arrow">›</span>
+                    </div>
+                </a>
+
+                <a href="kiddush-menu.html" class="menu-card">
+                    <div class="menu-image kiddush-menu">
+                        <img src="images/home/kiddush-menu.jpg" alt="קידושים">
+                    </div>
+                    <div class="menu-info">
+                        <h3>קידושים ברוטר</h3>
+                        <span class="menu-arrow">›</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>שעות פתיחה</h3>
+                <p>ראשון - חמישי: 10:00 - 22:00</p>
+                <p>שישי: 09:00 - 14:00</p>
+                <p>שבת: סגור</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 050-574-0348</p>
+                <p>כתובת: שדרות האמוראים 34, בית שמש</p>
+                <p>דוא"ל: Rotterdeli@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roter" target="_blank" aria-label="עקבו אחרינו בפייסבוק">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/roter" target="_blank" aria-label="עקבו אחרינו באינסטגרם">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/972721234567" target="_blank" aria-label="צרו איתנו קשר בווצאפ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>הזמנות מיוחדות</h3>
+                <p>ניתן להזמין אוכל לשבת עד יום חמישי בשעה 20:00</p>
+                <p>משלוחים חינם בהזמנה מעל ₪350</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 רוטר - כל הזכויות שמורות</p>
+                <a href="accessibility.html" class="accessibility-button" aria-label="מידע על נגישות האתר">
+                    <i class="fas fa-universal-access"></i>
+                    <span>הצהרת נגישות</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

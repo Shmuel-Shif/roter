@@ -1,0 +1,102 @@
+.accessibility-page {
+    padding: 2rem;
+    background-color: var(--cream);
+    /* min-height: calc(100vh - 300px); */
+}
+
+.accessibility-page .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.accessibility-page h1 {
+    color: var(--dark-brown);
+    font-size: 2.2rem;
+    text-align: right;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--gold);
+    margin-top: 2rem;
+}
+
+.accessibility-section {
+    margin-bottom: 2.5rem;
+}
+
+.accessibility-section h2 {
+    color: var(--primary-brown);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.accessibility-section p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.accessibility-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.accessibility-section ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.features-list {
+    margin-top: 1.5rem;
+}
+
+.features-list li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-right: 0;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li i {
+    color: var(--gold);
+    margin-left: 0.8rem;
+}
+
+.accessibility-section a {
+    color: var(--primary-brown);
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+.accessibility-section a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.accessibility-section a:hover::after {
+    transform: scaleX(1);
+}
+
+.update-date {
+    font-weight: 500;
+    color: var(--primary-brown);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    direction: ltr;
+    text-align: right;
+}

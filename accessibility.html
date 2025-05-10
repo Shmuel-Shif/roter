@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הצהרת נגישות - רוטר</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/css-responsive/accessibility-responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/css-responsive/footer-header-responsive.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" aria-label="דף הבית">
+                    <img src="images/home/logo.png" alt="לוגו רוטר" class="logo">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="תפריט">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" role="navigation">
+                <a href="index.html" class="active" aria-current="page">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="#footer" onclick="scrollToFooter(event)">צור קשר</a>
+                <a href="tel:+972505740348" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>050-574-0348</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="סגור תפריט">×</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="#footer">צור קשר</a>
+            <a href="tel:+972505740348" class="phone-link">
+                <i class="fas fa-phone"></i>
+                <span>050-574-0348</span>
+            </a>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main class="accessibility-page">
+        <div class="container">
+            <h1>הצהרת נגישות</h1>
+            
+            <section class="accessibility-section">
+                <h2>כללי</h2>
+                <p>
+                    חברתנו שואפת לספק חווית שימוש מרבית באתר לכלל הציבור לרבות ציבור בעלי המוגבלויות. השקענו מאמצים רבים במטרה לאפשר, להקל ולייעל את השימוש באתר בדגש על צרכי ציבור זה. התאמות הנגישות באתר שלנו בוצעו בהתאם לתקנה 35 בתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות) התשע"ג 2013, לתקן הישראלי ת"י 5568 המבוסס על הנחיות WCAG 2.0 לרמה AA ובכפוף לשינויים והתאמות שבוצעו במסמך התקן הישראלי. התאמת הנגישות נבדקה בדפדפנים המובילים כגון פיירפוקס וכרום בגירסאות האחרונות, וכלה שימוש טכנולוגיות מסייעות מסוג קורא מסך (NVDA).
+                </p>
+            </section>
+
+            <section class="accessibility-section">
+                <h2>כיצד הונגש האתר</h2>
+                <ul>
+                    <li>קישורים בתחילת הדף המאפשרים דילוג לתוכן.</li>
+                    <li>תיאור טקסטואלי לתמונות ואייקונים עבור טכנולוגיות מסייעות.</li>
+                    <li>כפתורי עצירה והפעלה של גלריות.</li>
+                    <li>הוטמעו חוקי ARIA העוזרים לפרש את תוכן האתר בצורה מדויקת וטובה יותר.</li>
+                    <li>הנגשת תפריטים, טפסים, היררכיית כותרות, רכיב טאבים, חלונות קופצים ועוד.</li>
+                </ul>
+                <p>
+                    כדי לנווט באתר בעזרת המקלדת השתמשו בכפתור ה-Tab. כל לחיצה עליו תעביר אותכם ללינק הבא. לחיצה על Shift + Tab תחזיר אותכם ללינק הקודם. שינוי גודל הגופן מתבצע באמצעות המקלדת, עבור הגדלת הגופן יש ללחוץ על המקשים ctrl +, עבור הקטנת הגופן יש ללחוץ על המקשים ctrl –
+                </p>
+            </section>
+
+            <section class="accessibility-section">
+                <h2>נתקלתם בבעיה? ספרו לנו!</h2>
+                <p>
+                    אנו משתדלים לשמור ולתחזק את האתר ברמה הטובה ביותר. במידה ומצאתם ו\או נתקלתם בקשיים בגלישה באתר, אל תהסס\י לדווח לי לכתובת המייל 
+                    <a href="mailto:Rotterdeli@gmail.com">Rotterdeli@gmail.com</a>
+                    או לטלפון <a href="tel:+972505740348">050-574-0348</a>.
+                    <br>
+                    אנו נטפל בבעיה ונחזור אליך בהקדם עם פרטים על טיפולה.
+                </p>
+            </section>
+
+            <section class="accessibility-section">
+                <h2>נגישות פיזית של החנות</h2>
+                <p>קיימים בסניפים מערכות עזר לשמיעה. בכדי לעשות שימוש במערכות העזר יש להעביר את מכשיר השמיעה למצב T או להשתמש באוזנייה.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check"></i> חנייה נגישה במתחם</li>
+                    <li><i class="fas fa-check"></i> שירותי נכים</li>
+                    <li><i class="fas fa-check"></i> ריהוט נגיש</li>
+                    <li><i class="fas fa-check"></i> טלפון ישיר - 050-574-0348</li>
+                    <li><i class="fas fa-check"></i> מתן שירות ללא המתנה בתור</li>
+                    <li><i class="fas fa-check"></i> הגעה בצורה נגישה לחנות - רצף נגיש</li>
+                    <li><i class="fas fa-check"></i> מערכת עזר לשמיעה</li>
+                </ul>
+            </section>
+
+            <section class="accessibility-section">
+                <h2>פרטי אחראי נגישות בחברה</h2>
+                <p>שם: רוטר</p>
+                <p>אימייל: <a href="mailto:Rotterdeli@gmail.com">Rotterdeli@gmail.com</a></p>
+                <p>מספר טלפון: <a href="tel:+972505740348">050-574-0348</a></p>
+            </section>
+
+            <section class="accessibility-section">
+                <h2>תאריך עדכון ההצהרה</h2>
+                <p>הצהרת הנגישות עודכנה לאחרונה בתאריך</p>
+                <p class="update-date">07/05/2025</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>שעות פתיחה</h3>
+                <p>ראשון - חמישי: 10:00 - 22:00</p>
+                <p>שישי: 09:00 - 14:00</p>
+                <p>שבת: סגור</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 050-574-0348</p>
+                <p>כתובת: שדרות האמוראים 34, בית שמש</p>
+                <p>דוא"ל: Rotterdeli@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roter" target="_blank" aria-label="עקבו אחרינו בפייסבוק">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/roter" target="_blank" aria-label="עקבו אחרינו באינסטגרם">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/972721234567" target="_blank" aria-label="צרו איתנו קשר בווצאפ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>הזמנות מיוחדות</h3>
+                <p>ניתן להזמין אוכל לשבת עד יום חמישי בשעה 20:00</p>
+                <p>משלוחים חינם בהזמנה מעל ₪350</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 רוטר - כל הזכויות שמורות</p>
+                <a href="accessibility.html" class="accessibility-button" aria-label="מידע על נגישות האתר">
+                    <i class="fas fa-universal-access"></i>
+                    <span>הצהרת נגישות</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/accessibility.js"></script>
+</body>
+</html>

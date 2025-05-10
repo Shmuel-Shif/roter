@@ -1,0 +1,398 @@
+/* משתני צבע מעודכנים */
+:root {
+    --primary-brown: #8B4513;
+    --light-brown: #DEB887;
+    --cream: #FAEBD7;
+    --dark-brown: #3E2723;
+    --white: #FFFFFF;
+    --gold: #D4AF37;
+    --overlay-dark: rgba(62, 39, 35, 0.7);
+}
+
+/* איפוס כללי */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+
+/* עיצוב Main */
+main {
+    margin-top: 0;
+    padding: 0;
+}
+
+.hero {
+    padding: 2rem;
+}
+
+h1 {
+    color: var(--dark-brown);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu-button {
+    background-color: var(--primary-brown);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: var(--dark-brown);
+    transform: translateY(-3px);
+}
+
+/* עיצוב אייקונים של רשתות חברתיות */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.social-icon {
+    color: var(--primary-brown);
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--dark-brown);
+    transform: scale(1.1);
+}
+
+/* עיצוב Footer */
+footer {
+    background-color: var(--dark-brown);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.accessibility-button {
+    background-color: var(--light-brown);
+    color: var(--dark-brown);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/* עיצוב אזור התפריטים */
+.menu-section {
+    padding: 6rem 0;
+    background: var(--cream);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    color: var(--dark-brown);
+    margin-bottom: 1rem;
+}
+
+.menu-description {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: var(--dark-brown);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* עיצוב כרטיסי תפריט */
+.menu-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.menu-card {
+    flex: 0 1 280px;
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease;
+}
+
+.menu-card:nth-child(even) {
+    transform: translateX(100px); /* כרטיסים זוגיים נכנסים מימין */
+}
+
+.menu-card.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.2);
+}
+
+.menu-image {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, 
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0.4) 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.menu-card:hover .menu-image::before {
+    opacity: 1;
+}
+
+.menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.menu-card:hover .menu-image img {
+    transform: scale(1.1);
+}
+
+.menu-info {
+    padding: 1rem;
+    text-align: center;
+    background: var(--white);
+}
+
+.menu-info h3 {
+    color: var(--dark-brown);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.menu-info h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, 
+        var(--primary-brown),
+        var(--gold),
+        var(--primary-brown));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.menu-card:hover .menu-info h3::after {
+    transform: scaleX(1);
+}
+
+.menu-info p {
+    color: var(--primary-brown);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.menu-link {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--primary-brown);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-brown);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gold);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.menu-card:hover .menu-link {
+    border-color: var(--gold);
+}
+
+.menu-card:hover .menu-link::before {
+    transform: translateX(0);
+}
+
+.menu-arrow {
+    display: none;
+}
+
+/* אנימציות */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* אנימציה חלקה יותר עם easing */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hero Banner מעוצב */
+.hero-banner {
+    position: relative;
+    height: 80vh;
+    background-image: url('../images/home/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay-dark);
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.banner-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    animation: slideUp 1s ease-out 0.5s both;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    animation: slideUp 1s ease-out 1s both;
+}
+
+/* כפתורים מעוצבים */
+.primary-btn, .secondary-btn {
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background: var(--gold);
+    color: var(--white);
+    border: 2px solid var(--gold);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 3rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.4rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תפריט שבת - רוטר</title>
+    <link rel="stylesheet" href="css/shabbat-menu.css">
+    <link rel="stylesheet" href="css/css-responsive/shabbat-menu-responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/css-responsive/footer-header-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" aria-label="דף הבית">
+                    <img src="images/home/logo.png" alt="לוגו רוטר" class="logo">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="תפריט">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" role="navigation">
+                <a href="index.html" class="active" aria-current="page">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="#footer" onclick="scrollToFooter(event)">צור קשר</a>
+                <a href="tel:+972505740348" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>050-574-0348</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="סגור תפריט">×</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="#footer">צור קשר</a>
+            <a href="tel:+972505740348" class="phone-link">
+                <i class="fas fa-phone"></i>
+                <span>050-574-0348</span>
+            </a>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <div class="menu-navigation">
+            <a href="#meat" class="menu-nav-item">בשר</a>
+            <a href="#chicken" class="menu-nav-item">עוף</a>
+            <a href="#fish" class="menu-nav-item">דגים</a>
+            <a href="#sides" class="menu-nav-item">תוספות</a>
+            <a href="#salads" class="menu-nav-item">סלטים</a>
+            <a href="#fried" class="menu-nav-item">מטוגנים</a>
+            <a href="#soups" class="menu-nav-item">מרקים</a>
+            <a href="#challahs" class="menu-nav-item">חלות</a>
+            <a href="#pastries" class="menu-nav-item">מאפים</a>
+            <a href="#cakes" class="menu-nav-item">עוגות</a>
+            <a href="#drinks" class="menu-nav-item">שתיה</a>
+        </div>
+
+        <!-- בשר -->
+        <section id="meat" class="menu-section">
+            <h2 class="section-title">בשר</h2>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/meat.png" alt="בריסקט מעושן" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בריסקט מעושן ברוטב מייפל</h3>
+                        <p class="item-description">נתח חזה בקר מעושן באיטיות במשך 10 שעות, מוגש עם רוטב מייפל-שום מתובל</p>
+                        <span class="item-price">₪94</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/meat.png" alt="צלי כתף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צלי כתף בבישול ארוך</h3>
+                        <p class="item-description">כתף בקר עסיסית בבישול איטי עם ירקות שורש, שום ורוזמרין, מוגש עם ציר מרוכז</p>
+                        <span class="item-price">₪89</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/meat.png" alt="צלעות טלה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צלעות טלה בציפוי עשבי תיבול</h3>
+                        <p class="item-description">צלעות טלה עסיסיות בציפוי פסטו פטרוזיליה ושום, צלויות בתנור אבן</p>
+                        <span class="item-price">₪110</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/meat.png" alt="קבב טלה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קבב טלה מרוקאי</h3>
+                        <p class="item-description">קבבים מבשר טלה טרי, מתובלים בכמון, פלפל חריף, ופטרוזיליה, מוגשים עם טחינה ביתית</p>
+                        <span class="item-price">₪72</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/meat.png" alt="פילה בקר" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פילה בקר בגריל</h3>
+                        <p class="item-description">נתח פילה בקר עסיסי צרוב על הגריל, מוגש עם רוטב יין אדום</p>
+                        <span class="item-price">₪128</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- עוף -->
+        <section id="chicken" class="menu-section">
+            <h2 class="section-title">עוף</h2>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/chicken.png" alt="פרגית על הגריל" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פרגית על הגריל</h3>
+                        <p class="item-description">סטייק פרגית עסיסי במרינדה ים תיכונית, צרוב על הגריל עד שלמות</p>
+                        <span class="item-price">₪72</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/chicken.png" alt="שניצל עוף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">שניצל עוף קלאסי</h3>
+                        <p class="item-description">חזה עוף דק מצופה בפירורי לחם פריכים, מוגש עם לימון טרי</p>
+                        <span class="item-price">₪64</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/chicken.png" alt="כנפיים ברוטב חריף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">כנפיים ברוטב פיקנטי</h3>
+                        <p class="item-description">כנפיים עוף קריספיות מצופות ברוטב צ'ילי-דבש חריף ומתוק</p>
+                        <span class="item-price">₪58</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/chicken.png" alt="עוף בסילאן" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוף בסילאן ופקאן</h3>
+                        <p class="item-description">חתיכות עוף בתנור בזיגוג סילאן, שום ושברי אגוזי פקאן</p>
+                        <span class="item-price">₪76</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/chicken.png" alt="שווארמה עוף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">שווארמה עוף ביתית</h3>
+                        <p class="item-description">רצועות עוף מתובלות בסטייל מזרחי, מוגשות עם טחינה ובצל סגול</p>
+                        <span class="item-price">₪68</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- דגים -->
+        <section id="fish" class="menu-section">
+            <h2 class="section-title">דגים</h2>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fish.png" alt="סלמון" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פילה סלמון בעשבי תיבול</h3>
+                        <p class="item-description">פילה סלמון נורבגי טרי, אפוי בעדינות עם שום, שמן זית ועשבי תיבול</p>
+                        <span class="item-price">₪98</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fish.png" alt="דניס" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פילה דניס על הפלנצ'ה</h3>
+                        <p class="item-description">פילה דניס פריך מבחוץ ונימוח מבפנים, עם נגיעות של לימון ורוזמרין</p>
+                        <span class="item-price">₪92</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fish.png" alt="חריימה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חריימה מסורתי</h3>
+                        <p class="item-description">תבשיל דג ים סוחף ברוטב עגבניות פיקנטי, שום ופלפלים</p>
+                        <span class="item-price">₪90</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fish.png" alt="לברק" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">לברק שלם בתנור</h3>
+                        <p class="item-description">דג לברק שלם, צלוי בתנור עם ירקות שורש, שמן זית וטימין</p>
+                        <span class="item-price">₪105</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fish.png" alt="קציצות דגים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קציצות דגים ברוטב לימוני</h3>
+                        <p class="item-description">קציצות עסיסיות מדג טרי ברוטב לימון, כוסברה ושום</p>
+                        <span class="item-price">₪88</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- תוספות -->
+        <section id="sides" class="menu-section">
+            <h2 class="section-title">תוספות</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/extras.png" alt="תפוחי אדמה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תפוחי אדמה אפויים</h3>
+                        <p class="item-description">פלחי תפוחי אדמה זהובים בתנור עם שמן זית, שום ורוזמרין</p>
+                        <span class="item-price">₪25</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/extras.png" alt="אורז לבן" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">אורז לבן קלאסי</h3>
+                        <p class="item-description">אורז בסמטי לבן, רך ואוורירי, מבושל בשלמות</p>
+                        <span class="item-price">₪22</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/extras.png" alt="מג'דרה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מג'דרה אותנטית</h3>
+                        <p class="item-description">אורז עם עדשים ירוקות ובצל מקורמל פריך – שילוב של מסורת וטעם</p>
+                        <span class="item-price">₪26</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/extras.png" alt="שעועית ירוקה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">שעועית ירוקה מוקפצת</h3>
+                        <p class="item-description">שעועית טרייה קראנצ'ית מוקפצת קלות עם שום, שמן זית ופתיתי שקדים</p>
+                        <span class="item-price">₪27</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/extras.png" alt="אנטיפסטי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">אנטיפסטי צבעוני</h3>
+                        <p class="item-description">מגוון ירקות עונתיים קלויים עם נגיעה של בלסמי ושמן זית משובח</p>
+                        <span class="item-price">₪28</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- סלטים -->
+        <section id="salads" class="menu-section">
+            <h2 class="section-title">סלטים <br><small>(קופסה 250 מ"ל)</small></h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט ירקות" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חומוס של רוטר</h3>
+                        <p class="item-description">עגבניות, מלפפונים, בצל סגול ופטרוזיליה קצוצים דק, עם שמן זית ולימון טרי</p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="טאבולה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה קלאסי</h3>
+                        <p class="item-description">בורגול עדין עם פטרוזיליה, נענע, עגבניות ובצל ירוק – חגיגה של רעננות</p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="חציל בטחינה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה ירוקה</h3>
+                        <p class="item-description">חציל על האש עם טחינה גולמית, שום, לימון ורוטב פטרוזיליה עדין</p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט עגבניות שרי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מטבוחה של רוטר</h3>
+                        <p class="item-description">עגבניות שרי צבעוניות, פלפל ירוק חריף, שום טרי וכוסברה ברוטב לימוני</p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קולסלאו</h3>
+                        <p class="item-description">כרוב פריך ברוטב מתקתק, עם שומשום קלוי לנגיעת קראנצ'</p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פטריות אסייאתי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סלק חמוץ מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">כרוב סגול במיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">כרוב לבן חמוץ מתוק ובוטנים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מלפפון ובצל חמוץ מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ביצים במיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ביצים עם בצל מטוגן</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פטריות צלויות שווארמה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">גזר אננס מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">גזר מבושל פיקנטי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סלסה עגבניות</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טאבולה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טומידו דיפ</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טפנד זיתים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בטטה בצ'ילי מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תירס במיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קישואים בטעם כבד</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תפו"א במיונז/h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קולורבי חמוץ מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">גזר גפרורים פיקנטי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">גזר פיקנטי של חיים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">זיתים מרוקאי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ש'רי חי פיקנטי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פטריות בפסטו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בטטה פטריות ובצל סגול</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סלט פלפל קלוי חמוץ מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סלט עדשים ירוקים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל בטעם כבד</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל קלוי בעשבי טיבול</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מטבוחה חצילים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קרם חציל קלוי במיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל קלוי במיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל קלוי זיתים ועגבניות</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל קלוי בפסטו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל ז'עלוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל קלוי בטחינה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל מטוגן חמוץ מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סלט סביח מפורק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל מטוגן ברוטב מרוקאי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל מטוגן בטחינה וקונפי שום</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל ברטוב צ'ילי מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל פלפל קלוי ושקדים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חציל בדבש וחרדל</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">רצועות פלפל חריף</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צ'ימיצ'ורי של רוטר</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קונפי שום</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סחוג של רוטר</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חריין</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ממרח פסטו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ממרח בטטה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חמוצים טורשי</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">דיפ בצל מטוגן</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">דיפ חלפיניו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ספייסי מיונז</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">רוטב פיצה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">דיפ פסטו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">דיפ קונפי שום</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">דיפ הבית</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה עמבה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה עריסה</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה זעתר</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה סחוג</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה פלפלים קלויים</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה פסטו</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה צ'ילי מתוק</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/salad.png" alt="סלט כרוב" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">טחינה סומק בשמן זית</h3>
+                        <p class="item-description"></p>
+                        <span class="item-price">₪16</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- מטוגנים -->
+        <section id="fried" class="menu-section">
+            <h2 class="section-title">מטוגנים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fried.png" alt="צ'יפס" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צ'יפס פריך</h3>
+                        <p class="item-description">תפוחי אדמה טריים חתוכים בעבודת יד ומטוגנים עד פריכות זהובה</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fried.png" alt="קובה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קובה מטוגן</h3>
+                        <p class="item-description">כדורי סולת במילוי בשר מתובל, מטוגנים עד קראסט פריך</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fried.png" alt="בורקס" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בורקס גבינה</h3>
+                        <p class="item-description">בורקס פריך במילוי גבינה מלוחה, מוגש עם רוטב עגבניות</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fried.png" alt="פלאפל" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פלאפל טרי</h3>
+                        <p class="item-description">כדורי חומוס מתובלים, מטוגנים בשמן עמוק לפי המסורת</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/fried.png" alt="סיגרים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סיגרים בשריים</h3>
+                        <p class="item-description">גלילי בצק פריך במילוי בשר טחון עסיסי</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- מרקים -->
+        <section id="soups" class="menu-section">
+            <h2 class="section-title">מרקים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/soup.png" alt="מרק עוף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מרק עוף מסורתי</h3>
+                        <p class="item-description">ציר עוף עשיר עם ירקות שורש, איטריות או קניידלך</p>
+                        <span class="item-price">₪28</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/soup.png" alt="מרק עדשים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מרק עדשים אדומות</h3>
+                        <p class="item-description">מרק סמיך עם עדשים, ירקות שורש ותיבול מזרחי</p>
+                        <span class="item-price">₪24</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/soup.png" alt="מרק בטטה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מרק בטטה קטיפתי</h3>
+                        <p class="item-description">מרק חלק ועשיר עם בטטה, גזר ושמנת מתוקה</p>
+                        <span class="item-price">₪26</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/soup.png" alt="מרק פטריות" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מרק פטריות ושמנת</h3>
+                        <p class="item-description">מרק חורפי מחמם עם תערובת פטריות ובצל</p>
+                        <span class="item-price">₪26</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/soup.png" alt="מרק כתום" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מרק כתום עשיר</h3>
+                        <p class="item-description">שילוב של גזר, דלעת, בטטה וקישוא עם תיבול עדין</p>
+                        <span class="item-price">₪24</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- חלות -->
+        <section id="challahs" class="menu-section">
+            <h2 class="section-title">חלות</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/challah.png" alt="חלה מתוקה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלה מתוקה קלועה</h3>
+                        <p class="item-description">חלה טרייה ומתוקה, קראסט פריך ונגיעת וניל</p>
+                        <span class="item-price">₪22</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/challah.png" alt="חלה קלועה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלה ביתית קלאסית</h3>
+                        <p class="item-description">חלה רכה וטרייה עם שומשום מעל</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/challah.png" alt="חלה עם קצח" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלה עם קצח</h3>
+                        <p class="item-description">חלה מיוחדת עם קצח טרי ואפייה זהובה</p>
+                        <span class="item-price">₪20</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/challah.png" alt="חלה פרווה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלה פרווה</h3>
+                        <p class="item-description">מתאימה לארוחות בשריות, רכה וטעימה במיוחד</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/challah.png" alt="חלת זעתר" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלת זעתר</h3>
+                        <p class="item-description">חלה מיוחדת עם תערובת זעתר שמוסיפה ניחוח וטעם</p>
+                        <span class="item-price">₪22</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- מאפים -->       
+        <section id="pastries" class="menu-section">
+            <h2 class="section-title">מאפים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/pastry.png" alt="קרואסון שוקולד" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קרואסון שוקולד</h3>
+                        <p class="item-description">קרואסון פריך עם מילוי שוקולד מריר, חם וטעים</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/pastry.png" alt="מאפה קינמון" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מאפה קינמון</h3>
+                        <p class="item-description">מאפה חמאה עם סוכר וקינמון, טרי וטעים</p>
+                        <span class="item-price">₪15</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/pastry.png" alt="בייגל מלח" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בייגל מלח</h3>
+                        <p class="item-description">בייגל חם ומפנק עם מלח גס מעל</p>
+                        <span class="item-price">₪10</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/pastry.png" alt="פאי תפוחים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פאי תפוחים</h3>
+                        <p class="item-description">פאי תפוחים חמים עם בצק פריך</p>
+                        <span class="item-price">₪25</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/pastry.png" alt="ספינג' פריזאי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">ספינג' פריזאי</h3>
+                        <p class="item-description">ספינג' פריזאי חם עם אבקת סוכר</p>
+                        <span class="item-price">₪20</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- עוגות -->
+        <section id="cakes" class="menu-section">
+            <h2 class="section-title">עוגות</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/cake.png" alt="עוגת שוקולד" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוגת שוקולד פרווה</h3>
+                        <p class="item-description">עוגת שוקולד פרווה עשירה עם שוקולד מריר ואגוזים</p>
+                        <span class="item-price">₪40</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/cake.png" alt="עוגת גבינה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוגת גבינה וניל</h3>
+                        <p class="item-description">עוגת גבינה על בסיס קרם גבינה איכותי עם טעמים עשירים</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/cake.png" alt="עוגת תפוחים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוגת תפוחים וקינמון</h3>
+                        <p class="item-description">עוגת תפוחים חמה עם קינמון ובצק פריך</p>
+                        <span class="item-price">₪35</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/cake.png" alt="עוגת חלווה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוגת חלווה ושוקולד</h3>
+                        <p class="item-description">עוגת חלווה עם שוקולד מריר וטעמים מזרחיים</p>
+                        <span class="item-price">₪38</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/cake.png" alt="עוגת גבינה פריזאית" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">עוגת גבינה פריזאית</h3>
+                        <p class="item-description">עוגת גבינה פריזאית עם קרם מוס על בסיס פריזאי</p>
+                        <span class="item-price">₪50</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- שתיה -->
+        <section id="drinks" class="menu-section">
+            <h2 class="section-title">שתיה</h2>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/drinking.png" alt="מיץ תפוזים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מיץ תפוזים טבעי</h3>
+                        <p class="item-description">מיץ תפוזים טבעי סחוט, טרי וטעים</p>
+                        <span class="item-price">₪20</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/drinking.png" alt="מיץ רימונים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מיץ רימונים</h3>
+                        <p class="item-description">מיץ רימונים טבעי עשוי מרימונים טריים</p>
+                        <span class="item-price">₪25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/drinking.png" alt="מים מינרליים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מים מינרליים</h3>
+                        <p class="item-description">מים מינרליים טבעיים עם טעמים מרעננים</p>
+                        <span class="item-price">₪10</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/drinking.png" alt="תה קר" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תה קר לימונענע</h3>
+                        <p class="item-description">תה קר עם טעמים של לימון ונענע, מרענן מאוד</p>
+                        <span class="item-price">₪15</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-shabbat/drinking.png" alt="קפה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קפה אמריקנו</h3>
+                        <p class="item-description">קפה שחור חזק, עם טעמים עשירים</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>שעות פתיחה</h3>
+                <p>ראשון - חמישי: 10:00 - 22:00</p>
+                <p>שישי: 09:00 - 14:00</p>
+                <p>שבת: סגור</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 050-574-0348</p>
+                <p>כתובת: שדרות האמוראים 34, בית שמש</p>
+                <p>דוא"ל: Rotterdeli@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roter" target="_blank" aria-label="עקבו אחרינו בפייסבוק">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/roter" target="_blank" aria-label="עקבו אחרינו באינסטגרם">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/972721234567" target="_blank" aria-label="צרו איתנו קשר בווצאפ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>הזמנות מיוחדות</h3>
+                <p>ניתן להזמין אוכל לשבת עד יום חמישי בשעה 20:00</p>
+                <p>משלוחים חינם בהזמנה מעל ₪350</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 רוטר - כל הזכויות שמורות</p>
+                <a href="accessibility.html" class="accessibility-button" aria-label="מידע על נגישות האתר">
+                    <i class="fas fa-universal-access"></i>
+                    <span>הצהרת נגישות</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/carousel-categories.js"></script>
+</body>
+</html> 

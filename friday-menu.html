@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ליל שישי - רוטר</title>
+    <link rel="stylesheet" href="css/friday-menu.css">
+    <link rel="stylesheet" href="css/css-responsive/friday-menu-responsive.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/css-responsive/footer-header-responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" aria-label="דף הבית">
+                    <img src="images/home/logo.png" alt="לוגו רוטר" class="logo">
+                </a>
+            </div>
+            <button class="hamburger-menu" aria-label="תפריט">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="nav-links" role="navigation">
+                <a href="index.html" class="active" aria-current="page">בית</a>
+                <a href="about.html">אודות</a>
+                <a href="#footer" onclick="scrollToFooter(event)">צור קשר</a>
+                <a href="tel:+972505740348" class="phone-link">
+                    <i class="fas fa-phone"></i>
+                    <span>050-574-0348</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="mobile-menu-close" aria-label="סגור תפריט">×</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html" class="active">בית</a>
+            <a href="about.html">אודות</a>
+            <a href="#footer">צור קשר</a>
+            <a href="tel:+972505740348" class="phone-link">
+                <i class="fas fa-phone"></i>
+                <span>050-574-0348</span>
+            </a>
+        </nav>
+    </div>
+    <div class="menu-overlay"></div>
+
+    <main>
+        <div class="menu-navigation">
+            <a href="#business" class="menu-nav-item">עסקיות</a>
+            <a href="#sandwiches" class="menu-nav-item">כריכים</a>
+            <a href="#fried" class="menu-nav-item">מטוגנים</a>
+            <a href="#specials" class="menu-nav-item">ספיישלים</a>
+            <a href="#cholant" class="menu-nav-item">צ׳ולנט</a>
+            <a href="#drinks" class="menu-nav-item">שתיה</a>
+        </div>
+        
+        <!-- עסקיות -->
+        <section id="business" class="menu-section">
+            <h2 class="section-title">עסקיות</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/business.png" alt="חמין מסורתי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חמין מסורתי</h3>
+                        <p class="item-description">תבשיל שעועית, תפוחי אדמה ובשר עם ביצים חומות, מבושל כל הלילה</p>
+                        <span class="item-price">₪50</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/business.png" alt="תבשיל בקר וירקות שורש" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תבשיל בקר וירקות שורש</h3>
+                        <p class="item-description">בקר בבישול ארוך עם גזר, תפוח אדמה, וסלרי ברוטב עשיר</p>
+                        <span class="item-price">₪58</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/business.png" alt="קציצות דגים ברוטב חריף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קציצות דגים ברוטב חריף</h3>
+                        <p class="item-description">קציצות דג ברוטב עגבניות עם פלפלים חריפים, סגנון מרוקאי</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/business.png" alt="תבשיל עדשים וירקות" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תבשיל עדשים וירקות</h3>
+                        <p class="item-description">תבשיל טבעוני מחמם עם עדשים, גזר, קישוא ועגבניות</p>
+                        <span class="item-price">₪40</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/business.png" alt="אוסובוקו טלה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">אוסובוקו טלה</h3>
+                        <p class="item-description">תבשיל שוק טלה בבישול ארוך ברוטב עשיר של יין אדום וירקות</p>
+                        <span class="item-price">₪65</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- כריכים -->
+        <section id="sandwiches" class="menu-section">
+            <h2 class="section-title">כריכים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/sandwiches.png" alt="כריך חזה עוף" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חלת שניצל</h3>
+                        <p class="item-description">שניצל של רוטר, מוגש בתוך חלה עם תוספות - מטבוחה, צ'ימיצ'ורי, שום קונפי, כרוב סגול,  וצ'יפס</p>
+                        <span class="item-price">₪50</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/sandwiches.png" alt="כריך טונה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">כריך אסאדו</h3>
+                        <p class="item-description">אסאדו מפורק ביין, מוגש בחלה עם תוספות לבחירה וצ'יפס</p>
+                        <span class="item-price">₪60</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- מטוגנים -->
+        <section id="fried" class="menu-section">
+            <h2 class="section-title">מטוגנים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/fried.png" alt="צ'יפס" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צ'יפס פריך</h3>
+                        <p class="item-description">תפוחי אדמה טריים חתוכים בעבודת יד ומטוגנים עד פריכות זהובה</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/fried.png" alt="קובה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קובה מטוגן</h3>
+                        <p class="item-description">כדורי סולת במילוי בשר מתובל, מטוגנים עד קראסט פריך</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/fried.png" alt="בורקס" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">בורקס גבינה</h3>
+                        <p class="item-description">בורקס פריך במילוי גבינה מלוחה, מוגש עם רוטב עגבניות</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/fried.png" alt="פלאפל" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">פלאפל טרי</h3>
+                        <p class="item-description">כדורי חומוס מתובלים, מטוגנים בשמן עמוק לפי המסורת</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/fried.png" alt="סיגרים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סיגרים בשריים</h3>
+                        <p class="item-description">גלילי בצק פריך במילוי בשר טחון עסיסי</p>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- ספיישלים -->
+        <section id="specials" class="menu-section">
+            <h2 class="section-title">ספיישלים</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="פרגית על הגריל" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">סיגרי אסאדו</h3>
+                        <p class="item-description">שלוש סיגרים פריכים ממולאים באסאדו מפורק</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="שניצל עוף קלאסי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">אראנצ'יני אסאדו</h3>
+                        <p class="item-description">שלושה כדורי אורז מטוגנים מצופים בפרורי לחם ממולאים באסאדו מפורק</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="כנפיים ברוטב פיקנטי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">נקנקיית נשנוש</h3>
+                        <p class="item-description">נקנקיית מרגז על שיפוד מוגש על ברוטב שזיפים</p>
+                        <span class="item-price">₪25</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="עוף בסילאן ופקאן" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">חומוס בשר</h3>
+                        <p class="item-description">צלחת חומוס מוגשת עם אסאדו מפורק</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="שווארמה עוף ביתית" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קריספי עראייס</h3>
+                        <p class="item-description">שלושה רבעי פיתות מטוגנים מצופים בפרורי לחם ממולאים בבשר טחון </p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+    
+                <div class="menu-item">
+                    <img src="../images/food-friday/specials.png" alt="שווארמה עוף ביתית" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קריספי נקניק</h3>
+                        <p class="item-description">נקנקיית מרגז מטוגנת מצופה בפרורי לחם עם רוטב צ'ילי מתוק</p>
+                        <span class="item-price">₪10</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- צ׳ולנט -->  
+        <section id="cholant" class="menu-section">
+            <h2 class="section-title">צ'ולנט</h2>
+            <div class="menu-grid">
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/cholant.png" alt="צ'ולנט קלאסי" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">צ'ולנט בשרי</h3>
+                        <p class="item-description">צ'ולנט עם בשר, תפוח אדמה, גריסים, חיטה, גרגירי חומוס ושעועית, מוגש עם קישקע</p>
+                        <span class="item-price">₪45</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/cholant.png" alt="צ'ולנט פרווה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">יאפצ'ייק</h3>
+                        <p class="item-description">קוגל תפוח אדמה מעורב עם בשר</p>
+                        <span class="item-price">30 / ₪50</span>
+                    </div>
+                </div>
+        
+                <div class="menu-item">
+                    <img src="../images/food-friday/cholant.png" alt="צ'ולנט עם עצמות" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">אוברנייט</h3>
+                        <p class="item-description">קוגל תפוח אדמה</p>
+                        <span class="item-price">15 / ₪25</span>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <!-- שתיה -->
+        <section id="drinks" class="menu-section">
+            <h2 class="section-title">שתיה</h2>
+            <div class="menu-grid">
+
+                <div class="menu-item">
+                    <img src="../images/food-friday/drinking.png" alt="מיץ תפוזים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מיץ תפוזים טבעי</h3>
+                        <span class="item-price">₪20</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-friday/drinking.png" alt="מיץ רימונים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מיץ רימונים</h3>
+                        <span class="item-price">₪25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-friday/drinking.png" alt="מים מינרליים" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">מים מינרליים</h3>
+                        <span class="item-price">₪10</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-friday/drinking.png" alt="תה קר" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">תה קר לימונענע</h3>
+                        <span class="item-price">₪15</span>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="../images/food-friday/drinking.png" alt="קפה" class="item-image">
+                    <div class="item-content">
+                        <h3 class="item-title">קפה אמריקנו</h3>
+                        <span class="item-price">₪18</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>שעות פתיחה</h3>
+                <p>ראשון - חמישי: 10:00 - 22:00</p>
+                <p>שישי: 09:00 - 14:00</p>
+                <p>שבת: סגור</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>צור קשר</h3>
+                <p>טלפון: 050-574-0348</p>
+                <p>כתובת: שדרות האמוראים 34, בית שמש</p>
+                <p>דוא"ל: Rotterdeli@gmail.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/roter" target="_blank" aria-label="עקבו אחרינו בפייסבוק">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/roter" target="_blank" aria-label="עקבו אחרינו באינסטגרם">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/972721234567" target="_blank" aria-label="צרו איתנו קשר בווצאפ">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>הזמנות מיוחדות</h3>
+                <p>ניתן להזמין אוכל לשבת עד יום חמישי בשעה 20:00</p>
+                <p>משלוחים חינם בהזמנה מעל ₪350</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>© 2025 רוטר - כל הזכויות שמורות</p>
+                <a href="accessibility.html" class="accessibility-button" aria-label="מידע על נגישות האתר">
+                    <i class="fas fa-universal-access"></i>
+                    <span>הצהרת נגישות</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-code.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/carousel-categories.js"></script>
+</body>
+</html>
